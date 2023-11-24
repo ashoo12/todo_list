@@ -1,0 +1,41 @@
+
+.navbar,.input_title
+    {
+    font-size: large !important;
+
+      background-color:orange;
+    }
+.navbar-nav{
+      float:right !important;
+    }
+.input_line
+{
+    font-size:4rem;
+    padding-top:20px;
+    padding-left:20px;
+    border:0;
+}
+.input_title,.list_container
+{
+    padding:10px;
+    margin:10px;
+}
+.input_list
+{
+   font-size:3rem;
+   padding:0;
+
+}
+
+#checkbox-3
+{
+   width:30px;
+   height:30px;
+   margin-top:1.2rem;
+
+}
+
+.flash_message
+{
+color:red;
+}

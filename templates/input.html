@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content%}
+{% block title %}<h1 class="input_title">My Todo List</h1>{% endblock %}
+   <div class="list_container container">
+       {{wtf.quick_form(form)}}
+
+
+
+              {% for task in user_tasks%}
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4><li>{{(task.list).title()}}</li></h4>
+                        </div>
+                           <div class="col-md-4">
+                               <a href="{{url_for('delete',id=task.id)}}"><h4>Task Done</h4></a>
+                           </div>
+                    </div>
+                    <br>
+              {%endfor%}
+
+
+
+
+   </div>
+
+
+{% endblock %}
